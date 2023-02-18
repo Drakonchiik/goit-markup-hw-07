@@ -1389,7 +1389,7 @@ body {
   transition: background-color 250ms var(--timing-function);
 }
 
-.social-link-footer:hover,
-.social-link-footer:focus {
-  background-color: #31d0aa;
+.social-mobile-menu:hover,
+.social-mobile-menu:focus {
+  background-color: var(--pressed-state);
 }
