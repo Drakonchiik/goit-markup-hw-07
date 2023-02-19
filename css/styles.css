@@ -230,7 +230,7 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../img/backimg/hero-mobile.png);
+    url(../img/backimg/hero-mobile.webp);
   text-align: center;
   background-size: cover;
 }
@@ -243,7 +243,7 @@ body {
         to right,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
-      ), url(../img/backimg/hero-mobile@2x.png);
+      ), url(../img/backimg/hero-mobile@2x.webp);
     }
   }
 
@@ -257,7 +257,7 @@ body {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../img/backimg/hero-tablet.png);
+      url(../img/backimg/hero-tablet.webp);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -268,7 +268,7 @@ body {
         to right,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
-      ), url(../img/backimg/hero-tablet@2x.png);
+      ), url(../img/backimg/hero-tablet@2x.webp);
     }
   }
 }
@@ -282,7 +282,7 @@ body {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../img/backimg/hero-desktop.png);
+      url(../img/backimg/hero-desktop.webp);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -293,7 +293,7 @@ body {
         to right,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
-      ), url(../img/backimg/hero-desktop@2x.png);
+      ), url(../img/backimg/hero-desktop@2x.webp);
     }
   }
 }
@@ -674,11 +674,9 @@ body {
 /* filter btn nav */
 .filter {
   display: flex;
-  justify-content: center;
-}
-
-.filter .item + .item {
-  margin-left: 24px;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 16px;
 }
 
 .filter-btn {
@@ -718,6 +716,7 @@ body {
 .project {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 0;
   margin-top: 24px;
   margin-left: -24px;
@@ -808,6 +807,38 @@ body {
   margin: 0;
   color: var(--text-color);
   line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157.98px) {
+  .filter {
+      justify-content: center;
+    gap: 0;
+  }
+  .filter .item + .item {
+    margin-left: 24px;
+  }  
+
+  .project {
+    justify-content: flex-start;
+  }
+
+  .project > .item {
+    display: inline-block;
+    flex-basis: calc(100% / 2 - 24px);
+    margin-top: 48px;
+    margin-left: 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .filter {
+    justify-content: center;
+    gap: 0;
+  }  
+
+  .filter .item + .item {
+    margin-left: 24px;
+  } 
 }
 
 /* footer */
