@@ -47,10 +47,12 @@ body {
 }
 
 .container {
+  min-width: 320px;
   max-width: 428px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -61,7 +63,7 @@ body {
 
 @media screen and (min-width: 1158px) {
   .container {
-    max-width: 1200px;
+    max-width: 1158px;
     padding: 0 15px;
   }
 }
@@ -222,6 +224,7 @@ body {
 /* main page index.html */
 
 .hero {
+  min-width: 320px;
   max-width: 480px;
   margin: 0 auto;
   padding: 112px 0;
@@ -387,7 +390,7 @@ body {
   }
 
   .advant .item {
-    width: 356px;
+    max-width: 356px;
   }
 
   .advant .item:nth-child(1) {
@@ -624,7 +627,7 @@ body {
 }
 
 .customers-item {
-  width: 168px;
+  min-width: 168px;
   height: 88px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
@@ -938,7 +941,7 @@ body {
 }
 
 .footer-form-input {
-  width: 396px;
+  min-width: 320px;
   height: 40px;
   margin-top: 16px;
   padding: 8px 16px;
@@ -995,6 +998,12 @@ body {
   fill: var(--white-color);
 }
 
+@media screen and (min-width: 480px) {
+  .footer-form-input {
+    min-width: 396px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .flex-footer {
     flex-direction: row;
@@ -1027,7 +1036,7 @@ body {
   }
 
   .footer-form-input {
-    width: 264px;
+    min-width: 264px;
   }
 
   .footer-btn {
@@ -1130,8 +1139,9 @@ body {
 }
 
 .form {
-  width: 360px;
+  max-width: 360px;
 }
+
 
 .form-field {
   position: relative;
