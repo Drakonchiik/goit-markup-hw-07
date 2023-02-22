@@ -21,44 +21,46 @@
   <body>
     <!-- header -->
     <header class="main-header">
-      <nav class="container main-nav">
-        <a class="logo link" href="./index.html"
-          ><span class="logo-web">Web</span>Studio</a
+      <div class="header-cont">
+        <nav class="container main-nav">
+          <a class="logo link" href="./index.html"
+            ><span class="logo-web">Web</span>Studio</a
+          >
+          <!-- navigation -->
+          <ul class="nav">
+            <li class="item-thumb item">
+              <div class="thumb">
+                <a class="nav-studio link" href="./index.html">Studio</a>
+              </div>
+            </li>
+            <li class="item">
+              <a class="link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="item">
+              <a class="link" href="">Contacts</a>
+            </li>
+          </ul>
+          <!-- contacts -->
+          <ul class="auth-nav">
+            <li class="item">
+              <a class="link" href="mailto:">info@devstudio.com</a>
+            </li>
+            <li class="item">
+              <a class="link" href="tel:">+11 (000) 111-11-11</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- open button menu -->
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
         >
-        <!-- navigation -->
-        <ul class="nav">
-          <li class="item-thumb item">
-            <div class="thumb">
-              <a class="nav-studio link" href="./index.html">Studio</a>
-            </div>
-          </li>
-          <li class="item">
-            <a class="link" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li class="item">
-            <a class="link" href="">Contacts</a>
-          </li>
-        </ul>
-        <!-- contacts -->
-        <ul class="auth-nav">
-          <li class="item">
-            <a class="link" href="mailto:">info@devstudio.com</a>
-          </li>
-          <li class="item">
-            <a class="link" href="tel:">+11 (000) 111-11-11</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- open button menu -->
-      <button
-        class="menu-toggle js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <svg width="32" height="22">
-          <use href="./img/symbol-defs.svg#mobile-menu"></use>
-        </svg>
-      </button>
+          <svg width="32" height="22">
+            <use href="./img/symbol-defs.svg#mobile-menu"></use>
+          </svg>
+        </button>
+      </div>
     </header>
     <!-- main page -->
     <main>
