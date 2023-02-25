@@ -1406,7 +1406,6 @@ body {
 
 .mobile-menu-link > .item + .item {
   margin-left: 25px;
-  scroll-margin-left: 25px;
 }
 
 @media screen and (min-width: 428px) {
@@ -1428,7 +1427,6 @@ body {
   font-weight: 600;
   font-size: 36px;
   line-height: 1.11;
-  text-transform: capitalize;
   color: var(--primary-brand-color);
 }
 
